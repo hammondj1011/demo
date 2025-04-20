@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :books
+  get "/books", to: "books#index2"
   get "say/hello"
   get "say/goodbye"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
